@@ -1,6 +1,6 @@
 {% set name = "psycogreen" %}
-{% set version = "1.0" %}
-{% set sha256 = "9acfa6cb5373bcf1eaf27c904d98d59c9f3bb0065cbb005f83ccc45055ace9a1" %}
+{% set version = "1.0.1" %}
+{% set sha256 = "86fe2a066d99526b3cff74ca45fd265b5b412a570195488603e298266e91be17" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
